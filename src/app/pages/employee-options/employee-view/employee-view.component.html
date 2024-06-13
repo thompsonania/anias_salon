@@ -1,0 +1,26 @@
+<h3>Welcome {{loggedInUser.frst_nm}}</h3>
+<a routerLink="/employee-create" class="btn btn-primary">Create</a>
+<a routerLink="/employee-search" class="btn btn-primary">Search</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Employee Name</th>
+            <th scope="col">Status</th>
+            <th scope="col">Position</th>
+            
+            <th scope="col">Options</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.empl_frst_nm}} {{employee.empl_last_nm}}</td>
+                <td>{{employee.status}}</td>
+                <td>{{employee.position}}</td>
+                <td>
+                    <a routerLink="/employee-edit/" class="btn btn-primary">Update</a>
+                    <a routerLink="/employee-delete/" class="btn btn-primary">Delete</a>
+                </td>
+                
+            </tr>
+        </tbody>
+</table>

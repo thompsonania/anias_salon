@@ -1,0 +1,24 @@
+<h3>Welcome {{loggedInUser.frst_nm}}</h3>
+<a routerLink="/customer-create-appointment" class="btn btn-primary">Create Appointment</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Appointment Date</th>
+            <th scope="col">Appointment Time</th>
+            <th scope="col">Status</th>
+            <th scope="col">Service</th>
+            <th scope="col">Employee Name</th>
+            <!-- <th scope="col">Options</th> -->
+        </tr>
+    </thead>
+        <tbody>
+            <tr *ngFor="let appointment of appointments">
+                <td>{{appointment.appt_date}}</td>
+                <td>{{appointment.appt_time}}</td>
+                <td>{{appointment.status}}</td>
+                <td>{{appointment.style_nm}}</td>
+                <td>{{appointment.empl_frst_nm}} {{appointment.empl_last_nm}}</td>
+                
+            </tr>
+        </tbody>
+</table>

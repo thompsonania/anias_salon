@@ -1,0 +1,31 @@
+<h3>Search for An Appointment</h3>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Appointment Date</th>
+            <th scope="col">Appointment Time</th>
+            <th scope="col">Status</th>
+            <th scope="col">Service</th>
+            <th scope="col">Customer Name</th>
+           
+        </tr>
+    </thead>
+        <tbody>
+            <tr *ngFor="let appointment of appointments">
+                <td>{{appointment.appt_date}}</td>
+                <td>{{appointment.appt_time}}</td>
+                <td>{{appointment.status}}</td>
+                <td>{{appointment.style_nm}}</td>
+                <td>{{appointment.cust_frst_nm}} {{appointment.cust_last_nm}}</td>
+             
+                    
+                    </tr>
+                    </tbody>
+                    </table>
+                    <button type="submit">Submit</button>
+                    <br><br>
+                <a routerLink="/cust-view/" class="btn btn-primary">Return</a>
+
+
+

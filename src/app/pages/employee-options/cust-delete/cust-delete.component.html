@@ -1,0 +1,34 @@
+<h3>Delete Customer</h3>
+<!-- <a routerLink="/cust-create" class="btn btn-primary">Create</a>
+<a routerLink="/cust-search" class="btn btn-primary">Search</a> -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">cust Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Gender</th>
+            
+            <!-- <th scope="col">Options</th> -->
+        </tr>
+    </thead>
+        <tbody>
+            <tr *ngFor="let customer of customers">
+                <td>{{customer.cust_frst_nm}} {{customer.cust_last_nm}}</td>
+                <td>{{customer.email}}</td>
+                <td>{{customer.phne_nbr}}</td>
+                <td>{{customer.gender}}</td>
+                <!-- <td>
+                    <a routerLink="/cust-edit/" class="btn btn-primary">Update</a>
+                    </td> -->
+                    
+                    </tr>
+                    </tbody>
+                    </table>
+
+                    <button type="submit">Submit</button>
+
+                    <br><br>
+                <a routerLink="/cust-view/" class="btn btn-primary">Return</a>
+
+

@@ -1,0 +1,125 @@
+<!-- <div class="contact-container">
+   
+      <div class="container1">
+      
+      <h1>Book Your Appointment Here!</h1>
+      <form (ngSubmit)="submitForm(bookAppointmentForm)" #bookAppointmentForm="ngForm">
+        <input type="text" name="customer_id" id="customer_id" value="{{loggedInUser.id}}" hidden ngModel>
+        <div class="form-group">
+          <label for="name"> Name:</label>
+          <input type="text" id="name" name="name" value="{{loggedInUser.frst_nm}} {{loggedInUser.last_nm}}"  readonly>
+        </div>
+  
+        <div class="form-group">
+          <label for="service">service:</label>
+          <select id="service_id" name="service_id" (ngModel)="selectedService" (ngModelChange)="onServiceChanged($event)" required>
+            <option value="" disabled selected>Select a service</option>
+            <option
+            *ngFor="let service of services"
+            [value]="service.id">
+            {{service.style_nm}}
+          </option>
+           
+          </select>
+        </div>
+
+        <div class="form-group" *ngIf="selectedServiceData">
+          <h3> Duration: {{selectedServiceData.duration}}</h3>
+          <h3> Duration: {{selectedServiceData.price}}</h3>
+
+        </div>
+
+        <div class="form-group">
+          <label for="employee">Employee:</label>
+         
+          <select id="employee_id" name="employee_id" ngModel required>
+            <option value="" disabled selected>Select a Employee</option>
+            <option 
+            *ngFor="let srvcEmployee of srvcEmployees"
+            [value]="srvcEmployee.employee_id">
+            {{ srvcEmployee.frst_nm}} {{ srvcEmployee.last_nm}}
+            
+          
+          </option>
+            
+          </select>
+          
+        </div>
+
+        <div class="form-group">
+          <label for="time">Time:</label>
+          <input type="time" id="appt_time" name="appt_time"  required ngModel>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" id="appt_date" name="appt_date"  required ngModel>
+        </div>
+  
+        <button type="submit">Submit</button>
+      </form>
+     
+  </div>
+  
+  </div>
+  <form (ngSubmit)="submitForm(bookAppointmentForm)" #bookAppointmentForm="ngForm">
+ -->
+ 
+ <h3>create customer Appointment</h3>
+
+ <input type="text" name="customer_id" id="customer_id" value="{{loggedInUser.id}}" hidden ngModel>
+ <div class="form-group">
+   <label for="name"> Name:</label>
+   <input type="text" id="name" name="name" value="{{loggedInUser.frst_nm}} {{loggedInUser.last_nm}}"  readonly>
+ </div>
+
+ <div class="form-group">
+   <label for="service">service:</label>
+   <select id="service_id" name="service_id" (ngModel)="selectedService" (ngModelChange)="onServiceChanged($event)" required>
+     <option value="" disabled selected>Select a service</option>
+     <option
+     *ngFor="let service of services"
+     [value]="service.id">
+     {{service.style_nm}}
+   </option>
+    
+   </select>
+ </div>
+
+ <div class="form-group" *ngIf="selectedServiceData">
+   <h3> Duration: {{selectedServiceData.duration}}</h3>
+   <h3> Duration: {{selectedServiceData.price}}</h3>
+
+ </div>
+
+ <div class="form-group">
+   <label for="employee">Employee:</label>
+  
+   <select id="employee_id" name="employee_id" ngModel required>
+     <option value="" disabled selected>Select a Employee</option>
+     <option 
+     *ngFor="let srvcEmployee of srvcEmployees"
+     [value]="srvcEmployee.employee_id">
+     {{ srvcEmployee.frst_nm}} {{ srvcEmployee.last_nm}}
+     
+   
+   </option>
+     
+   </select>
+   
+ </div>
+
+ <div class="form-group">
+   <label for="time">Time:</label>
+   <input type="time" id="appt_time" name="appt_time"  required ngModel>
+ </div>
+
+ <div class="form-group">
+   <label for="date">Date:</label>
+   <input type="date" id="appt_date" name="appt_date"  required ngModel>
+ </div>
+
+ <button type="submit">Submit</button>
+
+ 
+ 

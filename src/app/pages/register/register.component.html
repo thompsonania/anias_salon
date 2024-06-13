@@ -1,0 +1,38 @@
+<div class="admin-container">
+    <div class="b0x">
+    <form (ngSubmit)="register(RegisterForm)" #RegisterForm="ngForm" class="form">
+    <h1>Sign Up</h1>
+    
+    <input type="text" name="frst_nm" class="box" placeholder="FIRST NAME" ngModel>
+
+    <input type="text" name="last_nm" class="box" placeholder="LAST NAME" ngModel>
+
+    <input type="text" name="phne_nbr" class="box" placeholder="PHONE NUMBER" ngModel>
+
+    <input type="text" name="gender" class="box" placeholder="GENDER" ngModel>
+    
+    <input type="text" name="email" class="box" placeholder="EMAIL" ngModel>
+
+    <input type="text" name="password" class="box" placeholder="PASSWORD" ngModel>
+
+    <input type="text" name="role" class="box" placeholder="Enter role" ngModel hidden>
+    
+    
+    <input type="submit" value="REGISTER" id="submit">
+    <br>
+    <br>
+    <br>
+        <div class="account">
+        <h5>Don't Have An Account - <a routerLink="/login"> Sign Up Here ?</a></h5>
+        <br>
+    </div>
+
+    <div class="return">
+        <a routerLink="/contact">&larr;<h3>Return</h3></a>
+    </div>
+</form>
+</div>
+<br>
+<br>
+<br>
+</div>

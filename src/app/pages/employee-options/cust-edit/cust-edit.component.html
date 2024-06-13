@@ -1,0 +1,30 @@
+<h3>Update A Customer</h3>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">cust Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Gender</th>
+          
+        </tr>
+    </thead>
+        <tbody>
+            <tr *ngFor="let customer of customers">
+                <td>{{customer.cust_frst_nm}} {{customer.cust_last_nm}}</td>
+                <td>{{customer.email}}</td>
+                <td>{{customer.phne_nbr}}</td>
+                <td>{{customer.gender}}</td>
+                
+                    
+                    </tr>
+                    </tbody>
+                    </table>
+
+                    <button type="submit">Submit</button>
+                    <br><br>
+                <a routerLink="/cust-view/" class="btn btn-primary">Return</a>
+
+
+

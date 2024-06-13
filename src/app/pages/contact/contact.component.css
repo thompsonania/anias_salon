@@ -1,0 +1,67 @@
+.contact-container{
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/image/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.b0x{
+  width: 60%;
+  height: 70vh;
+  background-color: #ffffff6d;
+  border-radius: 20%;
+  margin-left: 300px; 
+  display: flex;
+  justify-content: space-between;
+
+}
+h1{
+  text-align: center;
+}
+.box1{
+  width: 50%;
+  height: 80%;
+  margin-top: 150px;
+  margin-left: 20px;
+  padding: 5px;
+  border-radius: 20px;
+}
+.box2{
+  width: 40%;
+  height: 70%;
+  margin: 100px;
+}
+.social1{
+  height: 30px;
+  display: flex;
+  justify-content:space-around;  
+}
+.box2 img{
+  width: 30px;
+  height: 30px;
+}
+h2{
+  text-align: center;
+}
+.social2{
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.social3{
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.social4{
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.num a:hover{
+  background-color: #8c848791;
+    letter-spacing:  0.25em;
+}
+
+
+

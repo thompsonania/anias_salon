@@ -1,0 +1,154 @@
+/* top */
+.container1{
+    height: 100%;
+    margin-top: 0;
+    background: linear-gradient(#ceb6c6, rgb(229, 213, 122));
+}
+.content{
+    display: flex;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.box{
+    width: 500px;
+    height: 500px;
+    margin-top: 2px;
+}
+.note{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif; 
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 700px;
+}
+.topic{
+    text-align: center;
+    margin-left: 500px; 
+    font-family: "Dancing Script", cursive;
+    
+}
+/* top end */
+
+.mid{
+    /* border: 2px solid rgb(30, 0, 255); */
+    display: flex;
+    justify-content: center;
+    background-color: #2f2e2e;
+}
+
+ul{
+    justify-content: center;
+    display: flex;
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 40px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+    /* border: 2px solid rgb(255, 55, 0); */
+}
+ul li:hover{
+    background-color: #000;
+    color: #FF70AB;
+    padding: 5px;
+    border-radius: 5px;
+}
+.client{
+    width: 50px;
+    height: 50px;
+}
+.success{
+    width: 50px;
+    height: 50px;
+}
+.stylist{
+    width: 50px;
+    height: 50px;
+}
+li{
+    text-align: center;
+}
+/* mid end */
+.container1{
+    height: 150%;
+    margin-top: 0;
+}
+.content1{
+    display: flex;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+.box1{
+    width: 500px;
+    height: 450px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.note1{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif; 
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 600px;
+}
+.topic1{
+    text-align: center;
+    margin-left: 500px; 
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+    padding: 10px;
+}
+/* our mission style end*/
+
+.b0x1{
+    background-color: #c1b8b8; 
+    border-radius: 20px;
+}
+.face{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.amanda-intro{
+    text-align: center;
+}
+.b0x2{
+    background-color: #da269bf7;
+    width: 250px;       
+    height: 280px; 
+    display: none;  
+    position: relative;
+    color: #fff;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 20px;
+}
+.b0x1:hover .b0x2{
+display: block;
+}
+.cover{
+    width: 300px;
+    height: 300px;
+    background-color: #2f2e2e;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin: 100px;
+}
+.container3{
+    height: 90vh;
+    display:flex;
+}
+.team{
+    background-color: #2f2e2e;
+    color: white;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    padding: 15px;
+    font-size: 40px;
+}
+

@@ -1,0 +1,101 @@
+.admin-container{
+  background-image: url(/assets/image/appt-bkg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  height: 100vh;
+}
+.form{
+  background-color: rgba(35, 35, 35, 0.751);
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  height: 100%;
+  padding: 5px;
+  border: 2px solid rgb(247, 244, 244);
+  border-radius: 100px 0 100px 0;   
+  
+}
+.form h1{
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
+  border-bottom:  4px solid rgba(255, 255, 255, 0.5);
+  margin: 30px;
+  margin-left: 100px;
+}
+.box{
+  padding: 12px;
+  margin: 20px;
+  width: 65%;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: #000;
+  font-size: 1rem;
+  
+}
+.box1{
+  padding: 12px;
+  margin: 20px;
+  width: 65%;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  /* color: #fff; */
+  font-size: 1rem;
+}
+#submit{
+  padding: 10px 20px;
+  margin-top: 50px;
+  width: 30%;
+  background-color: #b4b3b3d3;
+  box-shadow: inset -3px -3px rgba(0, 0, 0, 0.5);
+  color: black;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin-left: 150px;
+}
+#submit:hover{
+  cursor: pointer;
+  background-color: rgba(199, 130, 199, 0.334);
+  color: #fff;
+}
+::placeholder{
+  color: black; 
+  opacity: 0.7 ;
+}
+.pass{
+  text-decoration: none;
+  display: block;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+}
+h5{
+  color: #fff;
+  font-size: 15px;
+  background-color: #3b3939e5;
+}
+.account a{
+  cursor: pointer;
+  color: rgb(155, 155, 213);
+}
+.account a:hover{
+  color: red;
+}
+.b0x{
+  position: relative;
+  top: 15vh;
+}
+.return{
+text-align: center;
+}
+.return a{
+color: #fff;
+}
+.return a:hover{
+  color: rgb(214, 174, 174);
+  letter-spacing:  0.25em;
+}

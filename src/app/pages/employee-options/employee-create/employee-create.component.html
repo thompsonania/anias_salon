@@ -1,0 +1,27 @@
+<h3>Create A New Employee</h3>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">empl Name</th>
+            <th scope="col">Status</th>
+            <th scope="col">Position</th>
+            
+        </tr>
+    </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.empl_frst_nm}} {{employee.empl_last_nm}}</td>
+                <td>{{employee.status}}</td>
+                <td>{{employee.position}}</td>
+                
+                
+                
+                </tr>
+                </tbody>
+                </table>
+
+
+                <button type="submit">Submit</button>
+                <br><br>
+            <a routerLink="/employee-view/" class="btn btn-primary">Return</a>

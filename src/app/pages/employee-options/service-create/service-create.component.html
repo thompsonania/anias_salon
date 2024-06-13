@@ -1,0 +1,29 @@
+<h3>Create A New Service</h3>
+<!-- <a routerLink="/cust-create" class="btn btn-primary">Create</a>
+<a routerLink="/cust-search" class="btn btn-primary">Search</a> -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Style Name</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Price</th>
+            
+        </tr>
+    </thead>
+        <tbody>
+            <tr *ngFor="let service of services">
+                <td>{{service.style_nm}}</td>
+                <td>{{service.duration}}</td>
+                <td>{{service.price}}</td>
+        
+                <!-- <td>
+                    <a routerLink="/cust-edit/" class="btn btn-primary">Update</a>
+                    </td> -->
+                    
+                    </tr>
+                    </tbody>
+                    </table>
+                    <button type="submit">Submit</button>
+                    <br><br>
+                <a routerLink="/service/" class="btn btn-primary">Return</a>
+
